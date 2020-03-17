@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/default-pattern.png');
+    font-family: 'Montserrat', sans-serif;
+}
+
+#page-wrapper {
+    width: 1100px;
+    margin: auto;
+}
+
+header {
+    margin: 20px 0;
+}
+
+.header-top {
+    height: 350px;
+    background-image: url('images/default-header.jpg');
+    background-position: top;
+    position: relative;
+    border: 10px solid white;
+}
+
+.header-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#logo {
+    width: 500px;
+}
+
+header h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header-bottom {
+    height: 60px;
+    background-color: #504741;
+}
+
+#main-menu-wrapper {
+    text-align: center;
+}
+
+#main-menu {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#main-menu::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#main-menu li {
+    float: left;
+}
+
+#main-menu li a {
+    color: #999;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    display: inline-block;
+    font-size: 14px;
+    border-left: 1px solid rgba(255, 255, 255, .1);
+    border-right: 1px solid rgba(0, 0, 0, .4);
+}
+
+#main-menu li:first-child a {
+    border-left: 0;
+}
+
+#main-menu li:last-child a {
+    border-right: 0;
+}
+
+#main-menu li a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#page-content::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+aside {
+    width: 15%;
+    float: left;
+}
+
+.box {
+    background-color: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    width: calc(70% - 40px);
+    margin: 0 20px;
+    float: left;
+}
+
+main h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: green;
+    text-decoration: none
+}
+
+.fa-rss-square {
+    color: orange;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .box {
+    padding: 0;
+}
+
+footer .copy {
+    color: #ccc;
+    font-style: italic;
+    padding: 2px 0;
+}
+
+#social-links {
+    list-style-type: none;
+    padding: 40px 0;
+}
+
+#social-links li {
+    display: inline-block;
+    width: 30%;
+}
+
+#social-links li a {
+    color: #ccc;
+    font-size: 40px;
+}
